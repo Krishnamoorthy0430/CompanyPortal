@@ -6,7 +6,7 @@ No external DB required — data is lost when the process exits.
 from typing import Dict, List, Optional
 import threading
 
-from app.schemas import Employee
+from app.model.schemas import Employee
 
 _lock = threading.Lock()
 _storage: Dict[int, Employee] = {}

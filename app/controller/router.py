@@ -3,7 +3,7 @@ from typing import List
 import logging
 
 from app import crud
-from app.schemas import Employee, EmployeeCreate, EmployeeUpdate
+from app.model.schemas import Employee, EmployeeCreate, EmployeeUpdate
 
 router = APIRouter()
 logger = logging.getLogger("company_portal.api")

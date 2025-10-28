@@ -1,6 +1,6 @@
 from typing import List, Optional
 from app import db
-from app.schemas import EmployeeCreate, EmployeeUpdate, Employee
+from app.model.schemas import EmployeeCreate, EmployeeUpdate, Employee
 
 
 def create_employee(payload: EmployeeCreate) -> Employee:
