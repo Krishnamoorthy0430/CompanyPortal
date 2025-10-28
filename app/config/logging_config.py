@@ -11,7 +11,7 @@ def setup_logging(level: str = "INFO") -> None:
 		format="%(asctime)s | %(levelname)-7s | %(name)s | %(message)s",
 	)
 
-	# Optionally reduce log level for noisy libraries
-	logging.getLogger("uvicorn.access").setLevel(logging.WARNING)
-	logging.getLogger("uvicorn.error").setLevel(logging.WARNING)
+	# Allow standard uvicorn startup messages but reduce access log noise
+	logging.getLogger("uvicorn.access").setLevel(logging.WARNING)  # Reduce HTTP access logs
+	logging.getLogger("uvicorn.error").setLevel(logging.INFO)      # Show startup messages
 
