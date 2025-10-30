@@ -3,3 +3,6 @@ uvicorn[standard]>=0.20.0
 pydantic[email]>=2.0.0  # [email] for EmailStr support
 pytest>=7.0.0
 httpx>=0.24.0  # Required for TestClient in tests
+jinja2>=3.1.2  # For template rendering
+tabulate>=0.9.0  # For pretty table formatting
+colorlog>=6.7.0  # For colored console output
