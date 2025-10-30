@@ -1,5 +1,5 @@
 from typing import List, Optional
-from app import db
+from app.db import db
 from app.model.schemas import EmployeeCreate, EmployeeUpdate, Employee
 
 
