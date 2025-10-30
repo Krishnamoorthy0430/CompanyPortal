@@ -1,0 +1,22 @@
+# Virtual environments
+venv/
+.env/
+.company.portal.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Git and IDE files
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files
+*.log
