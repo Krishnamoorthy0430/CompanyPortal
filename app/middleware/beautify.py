@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 
 # Initialize templates with absolute path
-templates = Jinja2Templates(directory="e:/Python_Projects/company_portal/company_portal_service/app/templates")
+templates = Jinja2Templates(directory="/company_portal_service/app/templates")
 
 class BeautifyMiddleware:
     async def __call__(self, request: Request, call_next):
@@ -16,7 +16,7 @@ class BeautifyMiddleware:
         # Skip beautification if any of these conditions are met:
         should_skip = (
             # Skip Swagger UI and ReDoc routes
-            request.url.path.startswith("/docs") or 
+            request.url.path.startswith("/docs") or
             request.url.path.startswith("/redoc") or
             request.url.path.startswith("/openapi.json") or
             # Skip if client specifically asks for JSON
